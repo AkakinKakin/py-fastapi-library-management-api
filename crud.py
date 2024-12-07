@@ -3,7 +3,7 @@ import models
 import schemas
 
 
-def get_all_authors(db: Session, skip: int = 0, limit: int = 10):
+def get_all_authors(db: Session):
     return db.query(models.Author).all()
 
 
